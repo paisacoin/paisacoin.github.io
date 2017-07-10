@@ -896,37 +896,7 @@ requestAnimationFrame(render);
     }
 </script>
 
-<script type="text/javascript">
-	
 
-
-
-fetch("https://crossorigin.me/https://etcchain.com/api/v1/getAddressBalance?address=0xF421288699ac47287a5c3d76D960aE96F32BaDf5", {
-  mode: 'cors'
-}) .then(  
-    function(response) {  
-      if (response.status !== 200) {  
-        console.log('Looks like there was a problem. Status Code: ' +  
-          response.status);  
-        return;  
-      }
-
-      // Examine the text in the response  
-      response.json().then(function(data) {  
-        console.log(data);  
-      });  
-    }  
-  )  
-  .catch(function(err) {  
-    console.log('Fetch Error :-S', err);  
-  });
-
-
-// https://api.etherscan.io/api?module=account&action=balance&address=0x4F103DE247Ab537F2Ad1D333ca891cEd84BED5af&tag=latest&apikey=CSFZMKDHEIX8JQMV95TRRYFB6M3MUQIB26
-
-
-
-</script>
 
 	</body>
 </html>
